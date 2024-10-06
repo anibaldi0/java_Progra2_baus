@@ -17,7 +17,7 @@ public class TarjetaDeCredito {
         this.titular = titular;
     }
 
-    void descontarSaldo(double montoFinal) {
+    public void descontarSaldo(double montoFinal) {
         
         if(montoFinal > saldo){
             throw new IllegalArgumentException("Saldo insuficiente"); 

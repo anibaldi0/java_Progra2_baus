@@ -19,9 +19,9 @@ public class Ticket {
     public String toString(){
         return "Ticket: \n" + 
                 "Titular: " + nombreApellido + "\n" +
-                "Monto Total a Pagar: $ " + montoTotal + "\n" +
+                "Monto Total a Pagar: $ " + String.format("%.2f", montoTotal) + "\n" +
                 "Cantidad de cuotas: " + cantCuotas + "\n" +
-                "Monto por cuota: $ " + montoPorCuota;
+                "Monto por cuota: $ " + String.format("%.2f", montoPorCuota);
     }
     
 }
